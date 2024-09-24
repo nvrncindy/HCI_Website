@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Headland+One&display=swap" rel="stylesheet');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Headland One", serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --text-color: #027A76;
+    --header-color: #e86c4f;
+    --bg-color: #f2e5d3;
+
+
+}
+
+body{
+    background: #f2e5d3;
+    color: #3d9375;
+    background: url(aset/bghome.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 27px 9%;
+    transition: all ease .55s;
+    background-color: #e86c4f;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.logo img{
+    max-width: 130px;
+}
+
+.nav{
+    display: flex;
+
+}
+
+.nav a{
+    font-size: 17px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0 35px;
+    transition: all ease .55s;
+}
+
+.nav a:hover{
+    color: #bfddce;
+}
+
+.icon{
+    display: none;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 40px;
+    display: flex;
+    gap: 80px;
+    border-radius: 10px;
+    background-color: #D1947B;
+    box-shadow: 0 0 10px rgba(0, 0 ,0 , 0.1);
+    padding-bottom: 20px;
+}
+
+.left {
+    font-size: 20px;
+    color: #405955;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+.left h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 10px;
+}
+
+.inputBox{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputBox input{
+    width: 150%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    color:#405955;
+    border: none;
+    outline: none;
+    background-color: #f1ede6;
+}
+
+.inputBox.error input{
+    border-bottom: 1px solid red;
+}
+
+.inputBox:not(.error) input:focus{
+    border-bottom: 1px solid grey;
+}
+
+.inputBox input::placeholder{
+    color:grey;
+    opacity: 0.5;
+    font-size: 10px;
+}
+.btn {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    color: #405955;
+    background-color: #f2e5d3;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: aliceblue;
+}
+
+.right{
+    width: 45%;
+    padding-left: 40px;
+}
+
+.illustration{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.illustration img{
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+footer{
+    background-color: #405955;
+}
+.footerContainer{
+    width: 100%;
+    padding: 100px 40px 20px ;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  5px;
+    background-color: #f9a38b;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #ea565b;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #405955;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+@media (max-width: 1600px){
+    header{
+        padding: 13px 3%;
+    }
+
+}
+
+@media (max-width: 1470px){
+ 
+}
+
+@media (max-width: 1400px){
+    nav a{
+        font-size: 10px;
+    }
+
+    logo img{
+        max-width: 110px;
+    }
+}
+
+
+@media (max-width: 1230px){
+
+}
+
+@media (max-width: 1070px){
+    header{
+        padding: 10px 3%;
+    }
+
+    .icon{
+        display: block;
+    }
+    .icon img{
+        max-width: 22px;
+    }
+    .nav{
+        position: absolute;
+        top: -700%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fc703c;
+        transition: all ease .55s;
+        text-align: left;
+    }
+
+    .nav a{
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+    }
+
+    .nav.open{
+        top: 100%;
+    }
+    .illustration img{
+        display: none;
+    }
+}
+@media (max-width: 600px){
+
+    .section-title h1{
+        font-size: 35px;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        padding-top: 30px;
+        color: #405955;
+    }
+    .item img{
+        max-width: 100%;
+        max-height: 175px;
+        min-height: 175px;
+        transition: transform 0.2s ease;}
+
+        .footerNav ul{
+            flex-direction: column;
+        } 
+        .footerNav ul li{
+            width:100%;
+            text-align: center;
+            margin: 10px;
+        }
+        .socialIcons a{
+            padding: 8px;
+            margin: 4px;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            padding: 40px;
+            display: flex;
+            gap: 80px;
+            border-radius: 10px;
+            background-color: #D1947B;
+            box-shadow: 0 0 10px rgba(0, 0 ,0 , 0.1);
+            padding-bottom: 20px;
+        }
+
+        .left h3{
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 30px;
+        }
+
+        .illustration img{
+            display: none;
+        }
+
+        .btn {
+            width: 100%;
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 13px;
+            font-weight: 300;
+            border: none;
+            color: #405955;
+            background-color: #f2e5d3;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+}

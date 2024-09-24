@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Headland+One&display=swap" rel="stylesheet');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Headland One", serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --text-color: #027A76;
+    --header-color: #e86c4f;
+    --bg-color: #f2e5d3;
+
+
+}
+
+body{
+    background: #f2e5d3;
+    color: #3d9375;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 27px 9%;
+    transition: all ease .55s;
+    background-color: #e86c4f;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.logo img{
+    max-width: 130px;
+}
+
+.nav{
+    display: flex;
+
+}
+
+.nav a{
+    font-size: 17px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0 35px;
+    transition: all ease .55s;
+}
+
+.nav a:hover{
+    color: #bfddce;
+}
+
+.icon{
+    display: none;
+}
+
+.container {
+    position: relative;
+    width: auto;
+    height: 200%;
+    overflow: hidden;
+}
+
+.background-clip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%) scale(1.2);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content{
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.content h1{
+    font-size: 90px;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.history{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.about-img img{
+    width: 250%;
+    height: auto;
+    border-bottom: 0.5rem;
+    border-radius: 2px;
+}
+
+.dec {
+    padding-left: 38%;
+    color: #405955;
+    padding-right: 5%;
+}
+
+.dec p{
+    text-align: justify;
+    background-color: #dbae8d;
+    padding: 60px;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    font-size: 20px;
+}
+
+.visi{
+    background-color: #f4a24c;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+h2{
+ font-size: 50px;
+ padding-top: 5%;
+ font-family: "Bebas Neue", sans-serif;
+ text-align: center;
+ color: #405955;
+}
+
+
+footer{
+    background-color: #405955;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 100px 40px 20px ;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  5px;
+    background-color: #f9a38b;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+.socialIcons a:hover{
+    background-color: #ea565b;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #405955;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+  
+
+@media (max-width: 1600px){
+    header{
+        padding: 13px 3%;
+    }
+
+}
+
+@media (max-width: 1470px){
+     
+}
+
+@media (max-width: 1400px){
+    nav a{
+        font-size: 10px;
+    }
+
+    .logo img{
+        max-width: 110px;
+    }
+    .about-img img{
+        width: 180%;
+        height: auto;
+        border-bottom: 0.5rem;
+        border-radius: 2px;
+    }
+    .dec p{
+        text-align: justify;
+        background-color: #dbae8d;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 1070px){
+    header{
+        padding: 10px 3%;
+    }
+
+    .icon{
+        display: block;
+    }
+    .icon img{
+        max-width: 22px;
+    }
+    .nav{
+        position: absolute;
+        top: -700%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fc703c;
+        transition: all ease .55s;
+        text-align: left;
+    }
+
+    .nav a{
+        display: block;
+        font-size: 10px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+    }
+
+    .nav.open{
+        top: 100%;
+    }
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+    h2{
+        font-size: 35px;
+        padding-top: 5%;
+        font-family: "Bebas Neue", sans-serif;
+        text-align: center;
+        color: #405955;
+       }
+    .history{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+        align-items: center;
+    }
+    
+    .about-img img{
+        width: 100%;
+        height: auto;
+        border-bottom: 0.5rem;
+        border-radius: 2px;
+    }
+    
+    .dec {
+        color: #405955;
+        background-color: #dbae8d;
+        text-align: center;
+    }
+    
+    .dec p{
+        text-align: left;
+        left: 0%;
+        right: 0%;
+        margin-left: 0%;
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+    
+    .visi{
+        background-color: #f4a24c;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .visi h2{
+        font-size: 30px;
+    }
+}
+@media (max-width: 600px){
+    .dec p{
+        text-align: justify;
+        background-color: #dbae8d;
+        padding: 50px;
+        font-size: 15px;
+    }
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
